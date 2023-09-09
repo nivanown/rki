@@ -1,0 +1,169 @@
+﻿/*- field-input -*/
+$('.field-input input').on('focusin', function() {
+    $(this).parent().find('label').addClass('active');
+});
+ 
+$('.field-input input').on('focusout', function() {
+    if (!this.value) {
+        $(this).parent().find('label').removeClass('active');
+    }
+});
+
+/*- direction-tabs -*/
+const directionTabs = document.querySelectorAll('.direction-tabs [data-tab-target]');
+const directionTabContents = document.querySelectorAll('.direction-tabs [data-tab-content]');
+
+directionTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        directionTabContents.forEach(tabContent => {
+          tabContent.classList.remove('active');
+        });
+        directionTabs.forEach(tab => {
+          tab.classList.remove('active');
+        });
+        tab.classList.add('active');
+        target.classList.add('active');
+    });
+});
+
+/*- gallery-slider -*/
+var swiper = new Swiper('.gallery-slider .swiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.gallery-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.gallery-slider .swiper-button-next',
+        prevEl: '.gallery-slider .swiper-button-prev',
+    },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    369: {
+      slidesPerView: 2,
+      spaceBetween: 19,
+    },
+    520: {
+      slidesPerView: 3,
+      spaceBetween: 19,
+    },
+    680: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  }, 
+});
+
+/*- teachers-slider -*/
+var swiper = new Swiper('.teachers-slider .swiper', {
+    autoHeight: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.teachers-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.teachers-slider .swiper-button-next',
+        prevEl: '.teachers-slider .swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        369: {
+          slidesPerView: 2,
+          spaceBetween: 19,
+        },
+        520: {
+          slidesPerView: 3,
+          spaceBetween: 19,
+        },
+        680: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+    }, 
+});
+
+/*- reviews-slider -*/
+var swiper = new Swiper('.reviews-slider .swiper', {
+    autoHeight: true,
+    slidesPerView: 3,
+    spaceBetween: 32,
+    loop: true,
+    pagination: {
+        el: '.reviews-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.reviews-slider .swiper-button-next',
+        prevEl: '.reviews-slider .swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        369: {
+          slidesPerView: 2,
+          spaceBetween: 19,
+        },
+        520: {
+          slidesPerView: 3,
+          spaceBetween: 19,
+        },
+        680: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+        },
+    }, 
+});
+
+/*- news-slider -*/
+var swiper = new Swiper('.news-slider .swiper', {
+    autoHeight: true,
+    slidesPerView: 3,
+    spaceBetween: 32,
+    loop: true,
+    pagination: {
+        el: '.news-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.news-slider .swiper-button-next',
+        prevEl: '.news-slider .swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        369: {
+          slidesPerView: 2,
+          spaceBetween: 19,
+        },
+        520: {
+          slidesPerView: 3,
+          spaceBetween: 19,
+        },
+        680: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+        },
+    }, 
+});
+
+/*- questions-accordion -*/
+$('.questions-accordion__top-panel').click(function() {
+  $(this).next().slideToggle(200);
+  $(this).toggleClass('show', 200);
+});
