@@ -1326,7 +1326,7 @@ body {
   background: #fff;
   }
 
-.uniqueness__list li:before {
+.uniqueness__list_white-color li:before {
   background: url(../img/bg/uniqueness-minus.svg) center no-repeat;
   background-size: 100%;
   }
