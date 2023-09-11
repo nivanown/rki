@@ -1523,6 +1523,13 @@ body {
   max-width: 422px;
   }
 
+.application input[type='tel'],   
+.application input[type='text'],
+.application input[type='email'],
+.application input[type='password'] {
+  background: #fff;
+  }
+
 .application__btn {
   width: 100%;
   }
@@ -1904,6 +1911,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px 0;
+  }
+
+.ask-questions input[type='tel'],   
+.ask-questions input[type='text'],
+.ask-questions input[type='email'],
+.ask-questions input[type='password'] {
+  background: #fff;
   }
 
 .ask-questions__btn {
