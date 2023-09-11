@@ -263,6 +263,13 @@ textarea::-webkit-input-placeholder {
   appearance: none;
   }
 
+.field-input input[type='tel'],   
+.field-input input[type='text'],
+.field-input input[type='email'],
+.field-input input[type='password'] {
+  background: #eaeaec;
+  }
+
 /* checkbox */
 .checkbox { 
   display: flex;
@@ -433,6 +440,25 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
+  }
+
+/* wrapper */
+.one-page .wrapper {
+  position: relative;
+  }
+
+/* header__container */
+.one-page .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  }
+
+.one-page .header__container {
+  max-width: 1920px;
+  padding: 32px;
   }
 
 /* header__time-panel */
@@ -1508,7 +1534,7 @@ body {
   background-size: 100%;
   }
 
-.checkbox label a {
+.application__checkbox a {
   color: #fff;
   }
 
@@ -1972,6 +1998,210 @@ body {
   background: url(../img/bg/btn-bg-transparet-4.svg) center no-repeat;
   background-size: 100%;
   } 
+
+/* main-content */
+.one-page .main-content {
+  position: relative;
+  }
+
+.one-page .main-content__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 120px 15px;
+  min-height: 100vh;
+  z-index: 10;
+  }
+
+/* error-404__title */
+.error-404 {
+  max-width: 670px;
+  }
+
+.error-404__title {
+  margin: 0 0 40px;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 88px;
+  }
+
+.error-404__title span {
+  font-weight: 400;
+  }
+
+.error-404 p {
+  margin: 0;
+  font-size: 32px;
+  line-height: 44px;
+  }
+
+.error-404 p a {
+  font-weight: 700;
+  text-decoration: underline;
+  }
+
+/* mail-small-link */
+.mail-small-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 15px;
+  bottom: 58px;
+  }
+
+.mail-small-link__icon {
+  flex-shrink: 0;
+  display: block;
+  margin: 6px 10px 0 0;
+  }
+
+.mail-small-link__text {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  }
+
+.mail-small-link__text a {
+  color: #282835;
+  }
+
+.mail-small-link__text a:hover {
+  color: #ED484A;
+  }
+
+.main-content__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  }
+
+.main-content__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+/* gl-form */
+.gl-form {
+  max-width: 470px;
+  width: 100%;
+  }
+
+.gl-form_big-size {
+  max-width: 870px;
+  }
+
+.gl-form__title {
+  margin: 0 0 30px;
+  font-size: 48px;
+  line-height: 66px;
+  }
+
+.gl-form__title span {
+  color: #ED484A;
+  }
+
+.gl-form__text {
+  font-size: 16px;
+  line-height: 22px;
+  }
+
+.gl-form__text a {
+  font-weight: 700;
+  text-decoration: underline;
+  }
+
+.gl-form fieldset {
+  margin: 0 0 30px;
+  }
+
+.gl-form fieldset:last-child {
+  margin: 0;
+  }
+
+.gl-form fieldset .gl-form__text {
+  margin: 0;
+  padding: 24px 0 0;
+  }
+
+.gl-form__line-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+  }
+
+/* gl-btn */
+.gl-btn {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px;
+  border: 2px solid #000;
+  border-radius: 72px;
+  cursor: pointer;
+  }
+
+.gl-btn:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 89px;
+  top: -6px;
+  left: 0;
+  background: url(../img/bg/gl-btn-bg.png) center no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  content: "";
+  }
+
+.gl-btn__in {
+  position: relative;
+  display: block;
+  z-index: 5;
+  }
+
+.gl-btn__in:before {
+  position: absolute;
+  display: block;
+  width: 152px;
+  height: 37px;
+  left: 29px;
+  bottom: 5px;
+  background: url(../img/bg/gl-btn-left-dec.png) center no-repeat;
+  background-size: 100%;
+  content: "";
+  }
+
+.gl-btn__in:after {
+  position: absolute;
+  display: block;
+  width: 185px;
+  height: 38px;
+  right: 8px;
+  bottom: 5px;
+  background: url(../img/bg/gl-btn-right-dec.png) center no-repeat;
+  background-size: 100%;
+  content: "";
+  }
+
+.gl-btn__text {
+  position: relative;
+  padding: 13px 40px 15px;
+  display: block;
+  z-index: 6;
+  }
+
+.gl-btn_full-size {
+  width: 100%;
+  }
 
 /* footer */
 .footer {
