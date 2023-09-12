@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>RKI</title>
+    <meta content="width=device-width,maximum-scale=1,initial-scale=1,user-scalable=0" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" /> 
+    
+    <link rel="stylesheet" href="css/main.css" media="all"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all"/>
+    <link rel="stylesheet" href="css/hystmodal.min.css" media="all"/>
+    <link rel="stylesheet" href="css/responsive.css" media="all"/>
+
+    <link href="favicon.ico" rel="shortcut icon"/>
+
+</head>
+
+<body>  
+
+    <!-- wrapper Start -->
+    <div class="wrapper">
+
+        <!-- header Start -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/bg/logo.png" alt="RKI">
+                        </a>
+                    </div>
+                    <dl class="city-time">
+                        <dt><strong>Мск</strong> 莫斯科:</dt>
+                        <dd>17:00</dd>
+                    </dl>
+                    <dl class="city-time">
+                        <dt><strong>Пекин</strong> 北京:</dt>
+                        <dd>22:00</dd>
+                    </dl>
+                    <div class="profile">
+                        <div class="profile__name">
+                            <div class="profile__photo">
+                                <span>我</span>
+                            </div>
+                            <span class="profile__text">
+                                Имя Фамилия<br> 
+                                名字姓
+                            </span>
+                        </div>
+                        <div class="profile__dropdown">
+                            <ul class="profile__list">
+                                <li>
+                                    <div class="profile__icon">
+                                        <img src="img/bg/profile-icon-1.svg" alt="icon">
+                                    </div>
+                                    <div class="profile__text">
+                                        <a href="#">
+                                            <strong>Настройка профиля</strong><br>
+                                            研研研研研
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile__icon">
+                                        <img src="img/bg/profile-icon-2.svg" alt="icon">
+                                    </div>
+                                    <div class="profile__text">
+                                        <a href="#">
+                                            <strong>Тарифы</strong><br>
+                                            研研研研研
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile__icon">
+                                        <img src="img/bg/profile-icon-3.svg" alt="icon">
+                                    </div>
+                                    <div class="profile__text">
+                                        <a href="#">
+                                            <strong>Выход</strong><br>
+                                            研研研研研
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- main Start -->
+        <main class="main">
+            <section class="main-content">
+                <div class="main-content__container">
+                    <div class="personal-account">
+                        <nav class="personal-account__nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <strong>Расписание</strong><br>
+                                        时间表
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Обучение</strong><br>
+                                        培训课程
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <span>
+                                        <strong>Материалы</strong><br>
+                                        资料
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Настройки</strong><br>
+                                        设置
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Поддержка 24/7</strong><br>
+                                        与老师聊天
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Промокоды</strong><br>
+                                        广播
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="personal-account__content">
+                            <h1 class="personal-account__title">
+                                Материалы<br>
+                                <span>我</span>
+                            </h1>
+                            <div class="account-tabs">
+                                <nav class="account-tabs__nav">
+                                    <ul>
+                                        <li class="active" data-tab-target="#account-tab-1">
+                                            <span>
+                                                <strong>Записи занятий</strong><br>
+                                                我
+                                            </span>
+                                        </li>
+                                        <li data-tab-target="#account-tab-2">
+                                            <span>
+                                                <strong>Материалы урока</strong><br>
+                                                我
+                                            </span>
+                                        </li>
+                                        <li data-tab-target="#account-tab-3">
+                                            <span>
+                                                <strong>Учебники</strong><br>
+                                                我
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="account-tabs__content">
+                                    <div id="account-tab-1" class="account-tabs__item active" data-tab-content="account-tab-1">
+                                        <div class="account-tabs__top-panel">
+                                            <div class="search-form">
+                                                <form>
+                                                    <button class="search-form__btn" type="submit">Поиск</button>
+                                                    <div class="field-input">
+                                                        <label for="search-records">
+                                                            Поиск записей<br>
+                                                            你的名字
+                                                        </label>
+                                                        <input id="search-records" type="text">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="info-select">
+                                                <div class="info-select__panel">
+                                                    <div class="info-select__icon">
+                                                        <img src="img/bg/training-steps-icon-3.svg" alt="icon">
+                                                    </div>
+                                                    <span class="info-select__text">
+                                                        Все курсы<br>
+                                                        我
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lessons">
+                                            <div class="lesson">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                        <img src="img/src/lesson-img.jpg" alt="photo">
+                                                    </picture>
+                                                    <span class="lesson__content">
+                                                        <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                        <span class="lesson__title">
+                                                            Урок<br>
+                                                            1我
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="lesson">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                        <img src="img/src/lesson-img.jpg" alt="photo">
+                                                    </picture>
+                                                    <span class="lesson__content">
+                                                        <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                        <span class="lesson__title">
+                                                            Урок<br>
+                                                            1我
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="lesson">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                        <img src="img/src/lesson-img.jpg" alt="photo">
+                                                    </picture>
+                                                    <span class="lesson__content">
+                                                        <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                        <span class="lesson__title">
+                                                            Урок<br>
+                                                            1我
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="lesson">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                        <img src="img/src/lesson-img.jpg" alt="photo">
+                                                    </picture>
+                                                    <span class="lesson__content">
+                                                        <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                        <span class="lesson__title">
+                                                            Урок<br>
+                                                            1我
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="lesson">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                        <img src="img/src/lesson-img.jpg" alt="photo">
+                                                    </picture>
+                                                    <span class="lesson__content">
+                                                        <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                        <span class="lesson__title">
+                                                            Урок<br>
+                                                            1我
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="lesson">
+                                                <a href="#">
+                                                    <picture>
+                                                        <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                        <img src="img/src/lesson-img.jpg" alt="photo">
+                                                    </picture>
+                                                    <span class="lesson__content">
+                                                        <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                        <span class="lesson__title">
+                                                            Урок<br>
+                                                            1我
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="account-tab-2" class="account-tabs__item" data-tab-content="account-tab-2">
+                                        <div class="account-tabs__top-panel">
+                                            <div class="search-form">
+                                                <form>
+                                                    <button class="search-form__btn" type="submit">Поиск</button>
+                                                    <div class="field-input">
+                                                        <label for="search-lessons">
+                                                            Поиск уроков<br>
+                                                            你的名字
+                                                        </label>
+                                                        <input id="search-lessons" type="text">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="info-select">
+                                                <div class="info-select__panel">
+                                                    <div class="info-select__icon">
+                                                        <img src="img/bg/training-steps-icon-3.svg" alt="icon">
+                                                    </div>
+                                                    <span class="info-select__text">
+                                                        Все курсы<br>
+                                                        我
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lesson-materials">
+                                            <div class="lesson-materials__item">
+                                                <div class="lesson">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                            <img src="img/src/lesson-img.jpg" alt="photo">
+                                                        </picture>
+                                                        <span class="lesson__content">
+                                                            <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                            <span class="lesson__title">
+                                                                Смотреть<br> видеоматериал<br>
+                                                                我
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-materials__file">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <source srcset="img/src/file-img-1.webp" type="image/webp">
+                                                            <img src="img/src/file-img-1.jpg" alt="photo">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-materials__file">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <source srcset="img/src/file-img-2.webp" type="image/webp">
+                                                            <img src="img/src/file-img-2.jpg" alt="photo">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="lesson-materials__item">
+                                                <div class="lesson">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <source srcset="img/src/lesson-img.webp" type="image/webp">
+                                                            <img src="img/src/lesson-img.jpg" alt="photo">
+                                                        </picture>
+                                                        <span class="lesson__content">
+                                                            <span class="mov-btn mov-btn_big-size">Просмотреть</span>
+                                                            <span class="lesson__title">
+                                                                Смотреть<br> видеоматериал<br>
+                                                                我
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-materials__file">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <source srcset="img/src/file-img-1.webp" type="image/webp">
+                                                            <img src="img/src/file-img-1.jpg" alt="photo">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                                <div class="lesson-materials__file">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <source srcset="img/src/file-img-2.webp" type="image/webp">
+                                                            <img src="img/src/file-img-2.jpg" alt="photo">
+                                                        </picture>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="account-tab-3" class="account-tabs__item" data-tab-content="account-tab-3">
+                                        <div class="account-tabs__top-panel">
+                                            <div class="search-form">
+                                                <form>
+                                                    <button class="search-form__btn" type="submit">Поиск</button>
+                                                    <div class="field-input">
+                                                        <label for="search-books">
+                                                            Поиск Учебников<br>
+                                                            你的名字
+                                                        </label>
+                                                        <input id="search-books" type="text">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="info-select">
+                                                <div class="info-select__panel">
+                                                    <div class="info-select__icon">
+                                                        <img src="img/bg/training-steps-icon-3.svg" alt="icon">
+                                                    </div>
+                                                    <span class="info-select__text">
+                                                        Все курсы<br>
+                                                        我
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="books">
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="books__item">
+                                                <div class="books__img">
+                                                    <span class="books__name">
+                                                        <strong>Русский язык</strong><br>
+                                                        你的名字
+                                                    </span>
+                                                    <picture>
+                                                        <source srcset="img/src/book-img.webp" type="image/webp">
+                                                        <img src="img/src/book-img.jpg" alt="photo">
+                                                    </picture>
+                                                </div>
+                                                <div class="books__description">
+                                                    <h3 class="books__title">
+                                                        Учебник 1<br>
+                                                        你的名字
+                                                    </h3>
+                                                    <a href="#" class="gl-btn gl-btn_style-2 gl-btn_md-size gl-btn_transparent-bg gl-btn_text-underline gl-btn_full-size">
+                                                        <span class="gl-btn__in">
+                                                            <span class="gl-btn__text">
+                                                                Открыть<br>
+                                                                打开
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- main end -->
+
+    </div>   
+    <!-- wrapper end -->
+
+    <!-- jQuery libs -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- Plugin scripts -->
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/hystmodal.min.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+
+</html>     
