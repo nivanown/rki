@@ -167,3 +167,38 @@ $('.questions-accordion__top-panel').click(function() {
   $(this).next().slideToggle(200);
   $(this).toggleClass('show', 200);
 });
+
+/*- profile -*/
+var siteToggle = $('.profile__name'),
+    siteMenu= $('.profile__dropdown');
+
+siteToggle.click(function(){
+    siteToggle.toggleClass("show");
+    siteMenu.toggleClass("show");
+});
+
+$(document).click(function (e) {
+    if ( !siteMenu.is(e.target) && !siteToggle.is(e.target) && siteToggle.has(e.target).length === 0) {
+        siteToggle.removeClass("show");
+        siteMenu.removeClass('show');
+    };
+});
+
+
+/*- account-tabs -*/
+const accountTabs = document.querySelectorAll('.account-tabs [data-tab-target]');
+const accountTabContents = document.querySelectorAll('.account-tabs [data-tab-content]');
+
+accountTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        accountTabContents.forEach(tabContent => {
+          tabContent.classList.remove('active');
+        });
+        accountTabs.forEach(tab => {
+          tab.classList.remove('active');
+        });
+        tab.classList.add('active');
+        target.classList.add('active');
+    });
+});
