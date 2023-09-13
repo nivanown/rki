@@ -202,3 +202,15 @@ accountTabs.forEach(tab => {
         target.classList.add('active');
     });
 });
+
+/*- courses-catalog_ -*/
+$('.courses-catalog .courses__item:lt(3)').show();
+
+$('#load-more').click(function() {
+  event.preventDefault();
+  var $hidden = $('.courses-catalog .courses__item:hidden');
+  $($hidden).slice(0, 3).fadeIn(800);
+  if ($hidden.length == 3) {
+    $('#load-more').addClass('gl-btn_hidden');
+  }
+});
