@@ -214,3 +214,9 @@ $('#load-more').click(function() {
     $('#load-more').addClass('gl-btn_hidden');
   }
 });
+
+/*- order-info -*/
+$('.order-info__top-panel').click(function() {
+  $(this).next().slideToggle(200);
+  $(this).toggleClass('show', 200);
+});
