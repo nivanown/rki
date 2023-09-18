@@ -162,6 +162,40 @@ var swiper = new Swiper('.news-slider .swiper', {
     }, 
 });
 
+/*- courses-slider -*/
+var swiper = new Swiper('.courses-slider .swiper', {
+    autoHeight: true,
+    slidesPerView: 3,
+    spaceBetween: 28,
+    loop: true,
+    pagination: {
+        el: '.courses-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '#courses-slider-arrows .swiper-button-next',
+        prevEl: '#courses-slider-arrows .swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        369: {
+          slidesPerView: 2,
+          spaceBetween: 19,
+        },
+        520: {
+          slidesPerView: 3,
+          spaceBetween: 19,
+        },
+        680: {
+          slidesPerView: 3,
+          spaceBetween: 28,
+        },
+    }, 
+});
+
 /*- questions-accordion -*/
 $('.questions-accordion__top-panel').click(function() {
   $(this).next().slideToggle(200);
@@ -204,11 +238,11 @@ accountTabs.forEach(tab => {
 });
 
 /*- courses-catalog_ -*/
-$('.courses-catalog .courses__item:lt(3)').show();
+$('.courses-catalog .course:lt(3)').show();
 
 $('#load-more').click(function() {
   event.preventDefault();
-  var $hidden = $('.courses-catalog .courses__item:hidden');
+  var $hidden = $('.courses-catalog .course:hidden');
   $($hidden).slice(0, 3).fadeIn(800);
   if ($hidden.length == 3) {
     $('#load-more').addClass('gl-btn_hidden');
@@ -217,6 +251,12 @@ $('#load-more').click(function() {
 
 /*- order-info -*/
 $('.order-info__top-panel').click(function() {
+  $(this).next().slideToggle(200);
+  $(this).toggleClass('show', 200);
+});
+
+/*- language-info -*/
+$('.language-info__top-panel').click(function() {
   $(this).next().slideToggle(200);
   $(this).toggleClass('show', 200);
 });
