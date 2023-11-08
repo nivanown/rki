@@ -3453,7 +3453,6 @@ body {
 /* info-select */
 .info-select {
   position: relative;
-  z-index: 20;
   }
 
 /* info-select__top-panel */
