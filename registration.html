@@ -189,7 +189,7 @@
                             </fieldset>
                             <fieldset>
                                 <div class="gl-form__line-panel">
-                                    <button class="gl-btn gl-btn_full-size" type="submit">
+                                    <button class="gl-btn gl-btn_full-size" type="submit" data-hystmodal="#thanks">
                                         <span class="gl-btn__in">
                                             <span class="gl-btn__text">
                                                 Зарегистрироваться<br>
@@ -327,13 +327,34 @@
                 </div>
             </div>
             <div class="footer__link-panel">
-                <a href="#" class="footer__link">Карта сайта</a>
+                <a href="site-map.html" class="footer__link">Карта сайта</a>
             </div>
         </footer>
         <!-- footer end -->
 
     </div>   
     <!-- wrapper end -->
+
+    <!-- thanks modal Start -->
+    <div id="thanks" class="hystmodal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <button class="hystmodal__close" data-hystclose>Закрыть</button>
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <div class="hystmodal__styled">
+                    <h3 class="hystmodal__title text-center">
+                        Спасибо<br>
+                        за регистрацию<br>
+                        <span>感谢您的注册</span>
+                    </h3>
+                    <p class="hystmodal__text text-center">
+                        Ваш аккаунт будет активен в ближайшее время, после проверки администратором.<br> Ожидайте, пожалуйста<br>
+                        在管理员验证后，您的帐户将在不久的将来处于活动状态。 请稍等
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- thanks end -->
 
     <!-- jQuery libs -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
