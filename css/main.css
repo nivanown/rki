@@ -612,9 +612,10 @@ textarea::-webkit-input-placeholder {
 body { 
   min-width: 320px;
   color: #282835;
+  font-size: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.5;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   -webkit-text-size-adjust: none;
@@ -1627,14 +1628,14 @@ body {
   content: "";
   }
 
-.training-steps__ttile {
+.training-steps__tile {
   margin: 0;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   }
 
-.training-steps__ttile span {
+.training-steps__tile span {
   color: #ED484A;
   }
 
@@ -2658,7 +2659,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   line-height: 26px;
-  border-radius: 72px;
   cursor: pointer;
   transition: .2s color;
   }
@@ -2765,6 +2765,7 @@ body {
   color: #fff;
   border: 0;
   background: #DADAE1;
+  border-radius: 40px;
   cursor: default;
   }
 
@@ -3123,6 +3124,7 @@ body {
   height: 71px;
   top: 4px;
   right: 4px;
+  bottom: auto;
   background: url(../img/bg/gl-btn-right-style-14.svg) center no-repeat;
   background-size: 100%;
   content: "";
@@ -3435,6 +3437,7 @@ body {
   border: 0;
   font-size: 0;
   background: url(../img/bg/search-icon.svg) center no-repeat;
+  background-size: 100%;
   content: "";
   cursor: pointer;
   z-index: 5;
@@ -3477,6 +3480,7 @@ body {
   top: 50%;
   right: 25px;
   background: url(../img/bg/down-sm-arrow.svg) center no-repeat;
+  background-size: 100%;
   content: "";
   cursor: pointer;
   transition: .3s transform;
@@ -4193,6 +4197,7 @@ body {
 .payment-methods__text img {
   margin: 5px 10px 0 0;
   flex-shrink: 0;
+  width: 24px;
   }
 
 .payment-methods .field-input input {
@@ -4311,6 +4316,8 @@ body {
 
 .language-info__content p {
   margin: 0 0 34px;
+  font-size: 16px;
+  line-height: 24px;
   }
 
 .language-info .info-panel {
@@ -4423,7 +4430,7 @@ body {
   gap: 0 30px;
   }
 
-.info-panel__text {
+.teachers .info-panel__text {
   font-size: 14px;
   }
 
@@ -5530,10 +5537,10 @@ body {
   opacity: 0.4;
   }
 
-.news-modal__description {
-  margin: 0 0 48px;
-  font-size: 21px;
-  line-height: 28px;
+.news-modal__description p {
+  margin: 0 0 2.93vw;
+  font-size: 1.28vw;
+  line-height: 1.71vw;
   }
 
 /* hystmodal_teacher */
@@ -5600,6 +5607,7 @@ body {
   top: 0;
   left: 0;
   background: url(../img/bg/rate-star-active.svg) center no-repeat;
+  background-size: 100%;
   opacity: 0;
   transition: .3s opacity;
   content: "";
@@ -5614,6 +5622,7 @@ body {
   top: 0;
   left: 0;
   background: url(../img/bg/rate-star.svg) center no-repeat;
+  background-size: 100%;
   transition: .3s opacity;
   content: "";
   cursor: pointer;
