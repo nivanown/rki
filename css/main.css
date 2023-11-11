@@ -502,73 +502,6 @@ textarea::-webkit-input-placeholder {
   text-align: right;
   }
 
-/* btn */
-.btn {
-  position: relative;
-  display: inline-block;
-  padding: 16px 25px 12px;
-  min-width: 220px;
-  vertical-align: top;
-  color: #000;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 26px;
-  letter-spacing: 0.5px;
-  border-radius: 72px;
-  cursor: pointer;
-  }
-
-.btn:hover {
-  color: #000;
-  }
-
-.btn:before {
-  position: absolute;
-  display: block;
-  width: 219px;
-  height: 89px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url(../img/bg/btn-bg.svg) center no-repeat;
-  background-size: 100%;
-  content: "";
-  }
-
-.btn__in {
-  position: relative;
-  display: block;
-  z-index: 5;
-  }
-
-.btn_big-width {
-  min-width: 282px;
-  }
-
-.btn_big-width:before {
-  width: 282px;
-  height: 89px;
-  background: url(../img/bg/btn-bg-2.svg) center no-repeat;
-  background-size: 100%;
-  }
-
-.btn_transparent {
-  color: #ED484A;
-  }
-
-.btn_transparent:hover {
-  color: #ED484A;
-  }
-
-.btn_transparent:before {
-  width: 282px;
-  height: 80px;
-  background: url(../img/bg/btn-bg-transparet.svg) center no-repeat;
-  background-size: 100%;
-  } 
-
 /* mov-btn */
 .mov-btn {
   position: relative;
@@ -627,6 +560,13 @@ body {
 /* header */
 .header {
   background: #fff;
+  }
+
+/* header__col */
+.header__col {
+  display: flex;
+  align-items: center;
+  gap: 0 90px;
   }
 
 /* header__content */
@@ -812,6 +752,11 @@ body {
 
 .logo img {
   width: 100%;
+  }
+
+/* header__mobile-btn */
+.header__mobile-btn {
+  display: none;
   }
 
 /* main-navi */
@@ -1565,9 +1510,14 @@ body {
   position: relative;
   }
 
+.training-steps__item.active {
+  z-index: 30;
+  }
+
 .training-steps__content {
   position: relative;
   padding: 32px;
+  height: 100%;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 11px 60px 0 rgba(3, 3, 20, 0.04);
@@ -1628,14 +1578,14 @@ body {
   content: "";
   }
 
-.training-steps__tile {
+.training-steps__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 28px;
   }
 
-.training-steps__tile span {
+.training-steps__title span {
   color: #ED484A;
   }
 
@@ -5251,7 +5201,6 @@ body {
   align-items: center;
   right: 100px;
   top: 0;
-  bottom: 0;
   height: 92px;
   opacity: 0;
   visibility: hidden;
