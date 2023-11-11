@@ -1526,6 +1526,7 @@ body {
 .training-steps__item.active .training-steps__content {
   position: absolute;
   width: 100%;
+  height: auto;
   top: 0;
   box-shadow: 0 11px 60px 0 rgba(3, 3, 20, 0.1);
   z-index: 5;
