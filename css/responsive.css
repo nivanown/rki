@@ -2496,14 +2496,6 @@ input[type="password"] {
   line-height: 26px;
 	}
 
-.main-section__in {
-	padding: 0;
-	}
-
-}
-
-@media (max-width: 767px) {
-
 .main-section {
 	padding: 0 0 30px;
 	}
@@ -2512,9 +2504,11 @@ input[type="password"] {
 	display: none;
 	}
 
+
 .main-section__in {
 	flex-direction: column;
 	gap: 30px 0;
+	padding: 0;
 	}
 
 .main-section__left-col {
@@ -3115,7 +3109,7 @@ input[type="password"] {
 
 .direction-catalog__photo {
 	width: 100%;
-	height: 232px;
+	height: 300px;
 	order: -1;
 	}
 
@@ -4039,6 +4033,58 @@ input[type="password"] {
 	height: 260px;
 	}
 
+.mob-btn-panel {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0 0;
+	}
+
+.rating {
+	gap: 0 5px;
+	margin: 0 0 25px;
+	}
+
+.rating__star,
+.rating__star:before,
+.rating__star:after {
+	width: 20px;
+	height: 20px;
+	}
+
+.form-text {
+	margin: 0 0 15px;
+	font-size: 14px;
+	line-height: 22px;
+	}
+
+.file-input {
+  padding: 14px 16px;
+  border-radius: 13px;
+  }
+
+ .file-input label {
+  padding: 0 72px 0 0;
+  }
+
+.file-input__icon {
+  margin: 0 10px 0 0;
+  width: 32px;
+  }
+
+.file-input__text {
+  width: 275px;
+  font-size: 16px;
+  line-height: 20px;
+  }
+
+.file-input__delete {
+  width: 40px;
+  height: 40px;
+  right: 16px;
+  background: url(../img/bg/close-icon.svg) center no-repeat #ED484A;
+  background-size: 14px;
+  }
+
 }
 
 @media (max-width: 660px) { 
@@ -4095,6 +4141,32 @@ input[type="password"] {
 	height: 11.03vw;
 	top: 1.55vw;
 	right: 1.38vw;
+	}
+
+.direction-catalog__photo {
+	height: 232px;
+	}
+
+.file-input label {
+	padding: 0 12.41vw 0 0;
+	}
+
+.file-input__text {
+	max-width: 47.41vw;
+	font-size: 14px;
+	line-height: 18px;
+	}
+
+.file-input__delete {
+	width: 6.90vw;
+  height: 6.90vw;
+  right: 2.76vw;
+  background-size: 2.41vw;
+	}
+
+.file-input__icon {
+	margin: 0 10px 0 0;
+	width: 16px;
 	}
 
 }

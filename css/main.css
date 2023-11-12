@@ -2207,6 +2207,11 @@ body {
   line-height: 32px;
   }
 
+/* mob-btn-panel */
+.mob-btn-panel {
+  display: none;
+  }
+
 /* questions-section */
 .questions-section {
   background: url(../img/bg/questions-section-bg.jpg) center no-repeat #f6f6f8;
