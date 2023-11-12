@@ -571,7 +571,6 @@ body {
 
 /* header__content */
 .header__content {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2469,7 +2468,7 @@ body {
 .one-page .main-content {
   position: relative;
   padding: 0;
-  background: #dcdcdc;
+  background: #f7f7f9;
   }
 
 .one-page .main-content__container {
@@ -3686,7 +3685,7 @@ body {
   z-index: 10;
   }
 
-.save-btn:checked:before {
+.save-btn:before {
   position: absolute;
   display: block;
   width: 48px;
@@ -4172,9 +4171,11 @@ body {
 
 /* result-widget */
 .result-widget {
+  position: sticky;
   flex-shrink: 0;
   margin: 0 0 0 30px;
   width: 470px;
+  top: 0;
   background: #fff;
   border-radius: 25px;
   }
