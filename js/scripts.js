@@ -223,12 +223,8 @@ var swiper = new Swiper('.courses-slider .swiper', {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
-    },
-    369: {
-      slidesPerView: 2,
-      spaceBetween: 19,
     },
     768: {
       slidesPerView: 3,
